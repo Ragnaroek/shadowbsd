@@ -1,0 +1,8 @@
+[package]
+name = "hostif"
+version = "0.0.1"
+edition = "2024"
+
+[lib]
+name = "hostif"
+path = "hostif.rs"
