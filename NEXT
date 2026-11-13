@@ -1,0 +1,3 @@
+NEXT0: kernel can become arch free! remove wasm32 stuff and simplify.
+NEXT1: implement a web kernel with console.log console!
+NEXT2: build and run the kernel hello world in the browser

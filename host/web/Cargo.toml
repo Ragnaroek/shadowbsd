@@ -1,0 +1,11 @@
+[package]
+name = "shadowbsd-web"
+version = "0.0.1"
+edition = "2024"
+
+[lib]
+path = "hmain.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+kernel = { path = "../../sys/kernel" }
