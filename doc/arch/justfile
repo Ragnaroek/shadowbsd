@@ -1,0 +1,19 @@
+port := "3000"
+
+# one-time setup: add mermaid preprocessor + JS assets to book.toml (commit the result)
+setup:
+    mdbook-mermaid install .
+
+build:
+    mdbook build
+
+serve:
+    mdbook serve --port {{port}} --open
+
+# compile/test Rust code blocks in the docs
+test:
+    mdbook test
+
+# remove build output
+clean:
+    mdbook clean

@@ -1,0 +1,11 @@
+clean:
+    rm -rf build/
+
+build: clean
+    cd ../../host/web && just build
+    mkdir build/
+    cp ../../host/web/target/wasm32-unknown-unknown/release/shadowbsd_web.wasm build/shadowbsd.wasm
+    cp index.html build/
+
+serve: build
+    miniserve ./build

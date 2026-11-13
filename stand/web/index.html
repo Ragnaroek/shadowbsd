@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ShadowBSD</title>
+</head>
+<body>
+    <script type="module">
+      const load = await WebAssembly.instantiateStreaming(
+        fetch("./shadowbsd.wasm")
+      );
+      load.instance.exports.hmain();
+    </script>
+</body>
+</html>
